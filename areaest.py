@@ -1,6 +1,6 @@
 from math import sin, cos, log, pi, e
 function=""
-f=str(input("function in terms of x using python notation "))
+f=str(input("function in terms of x "))
 f=list(f)
 for i in range (0,len(f)-1):
     if f[i]=='l' and f[i+1]=='n':
@@ -9,6 +9,9 @@ for i in range (0,len(f)-1):
 for i in range (0,len(f)):
     if f[i]=='^':
         f[i]='*'
+        f.insert(i+1,'*')
+for i in range (0,len(f)-1):
+    if f[i]=='1' or f[i]=='2' or f[i]=='3' f[i]=='4' or f[i]=='5' or f[i]==6 or f[i]=='7' or f[i]=='8' or f[i]=='9' or f[i]=='0' and f[i+1]=='x' or f[i+1]=='l' and f[i+2]=='n':
         f.insert(i+1,'*')
 equation=""
 for i in range (0,len(f)):
