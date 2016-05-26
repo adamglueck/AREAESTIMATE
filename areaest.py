@@ -1,5 +1,5 @@
 from math import sin, cos, radians
-f=str(input("function in terms of x using python notation"))
+f=str(input("function in terms of x using python notation "))
 xmin=float(input("x min "))
 xmax=float(input("x max "))
 numbershapes=float(input("number of shapes "))
