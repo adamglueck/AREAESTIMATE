@@ -1,5 +1,19 @@
-from math import sin, cos, radians
+from math import sin, cos, log, pi, e
+function=""
 f=str(input("function in terms of x using python notation "))
+f=list(f)
+for i in range (0,len(f)-1):
+    if f[i]=='l' and f[i+1]=='n':
+        f[i+1]='g'
+        f.insert(i+1,'o')
+for i in range (0,len(f)):
+    if f[i]=='^':
+        f[i]='*'
+        f.insert(i+1,'*')
+equation=""
+for i in range (0,len(f)):
+    equation=equation+f[i]
+f=equation
 xmin=float(input("x min "))
 xmax=float(input("x max "))
 numbershapes=float(input("number of shapes "))
