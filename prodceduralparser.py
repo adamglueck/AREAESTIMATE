@@ -10,5 +10,7 @@ for i in range (0,len(equivs)):
     replacer=list(equivs[i][0])
     l=len(function)-searchcount+1
     for j in range (0,l):
-        print(function[j])
+        go='TRUE'
+        while go='TRUE':
+            
         
