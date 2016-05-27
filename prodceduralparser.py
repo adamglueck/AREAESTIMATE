@@ -11,4 +11,4 @@ for i in range (0,len(equivs)):
     l=len(function)-searchcount+1
     for j in range (0,l):
         print(function[j])
-        print(" ")
+        
