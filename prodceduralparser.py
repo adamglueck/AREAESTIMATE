@@ -6,5 +6,7 @@ equivs=[('ln','log'),('1x','1*x'),('2x','2*x'),('3x','3*x'),('4x','4*x'),('5x','
 print (equivs)
 for i in range (0,len(equivs)):
     searcher=list(equivs[i][0])
+    searchcount=len(searcher)
     replacer=list(equivs[i][0])
-    
+    l=len(function)-searchcount+1
+    for j in range (0,l):
