@@ -9,9 +9,10 @@ for i in range (0,len(equivs)):
     searchcount=len(searcher)
     replacer=list(equivs[i][0])
     l=len(function)-searchcount+1
+    print(searcher)
     for j in range (0,l):
-        go='TRUE'
         k=0
-        while go='TRUE':
-            function(
-        
+        while k<searchcount:
+        if function[k]==searcher[0]:
+            print('TRUE')
+            k=k+1
