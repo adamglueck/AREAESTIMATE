@@ -20,3 +20,8 @@ for i in range (0,len(equivs)):
                 if function[j+1]==searcher[1] and function[j]==searcher[0] and function[j+2]==searcher[2]:
                     print(searcher)
                     print('TRUE')
+            if searchcount==4:
+                if function[j+1]==searcher[1] and function[j]==searcher[0] and function[j+2]==searcher[2] and function[j+3]=searcher[3]:
+                    print(searcher)
+                    print('TRUE')
+            
