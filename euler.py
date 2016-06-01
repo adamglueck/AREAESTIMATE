@@ -5,9 +5,10 @@ step=float(input("step? "))
 deriv=str(input("differential equation? "))
 x=startingvaluex
 y=startingvaluey
-
-while endingvaluex>y:
+while endingvaluex>x:
   y=y+step*(eval(deriv))
   x=x+step
-  print(x, y)
+x=str(int(x))
+y=str(y)
+print("at x="+x+", y approximately equals "+y)
   
