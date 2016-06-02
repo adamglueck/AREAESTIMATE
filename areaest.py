@@ -14,7 +14,7 @@ for i in range (0,len(f)-1):
     if f[i]=='1' or f[i]=='2' or f[i]=='3' f[i]=='4' or f[i]=='5' or f[i]==6 or f[i]=='7' or f[i]=='8' or f[i]=='9' or f[i]=='0' and f[i+1]=='x':
         f.insert(i+1,'*')
 for i in range (0,len(f)-2):
-    if f[i]=='1' or f[i]=='2' or f[i]=='3' f[i]=='4' or f[i]=='5' or f[i]==6 or f[i]=='7' or f[i]=='8' or f[i]=='9' or f[i]=='0' and f[i+1]=='l' and f[i+2]='n':
+    if f[i]=='1' or f[i]=='2' or f[i]=='3' f[i]=='4' or f[i]=='5' or f[i]==6 or f[i]=='7' or f[i]=='8' or f[i]=='9' or f[i]=='0' and f[i+1]=='l' and f[i+2]=='n':
         f.insert(i+1,'*')
 equation=""
 for i in range (0,len(f)):
