@@ -1,8 +1,7 @@
 from math import sin, cos, log, pi, e
 num=int(input("number of pieces in piecewise function"))
-area=0
-b=0
-area2=0
+totale=0
+totald=0
 for i in range (0,num):
     xmin=float(input("x minimum of piecewise component"))
     xmax=float(input("x maximum of piecewise component"))
@@ -25,18 +24,20 @@ for i in range (0,num):
     for i in range (0,len(f)):
         equation=equation+f[i]
     equation2="x*("+equation+")"
-    step=(xmax-xmin)/1000
-    a=0
-    for i in range (0,1000):
-        i=xmin+step*i
+    d=0
+    step=(xmax-xmin)/500
+    for i in range (0,500):
+        i=(xmin+step/2)+step*i
         x=i
-        a=a+(eval(equation2))*step
-    area=area+a
-    for i in range (0,1000):
-        i=xmin+step*i
+        d=d+(eval(equation2))*step
+    e=0
+    for i in range (0,500):
+        i=(xmin+step/2)+step*i
         x=i
-        b=b+(eval(equation))*step
-    area2=area2+b
-print(area2/area)
-
-
+        e=e+(eval(equation))*step
+        totald=d*(xmax-xmin)/2+totald
+        totale=e+totale
+if num==1:
+    print(d/e)
+if num!=1:
+    print(totald/totale)
