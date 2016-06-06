@@ -55,7 +55,7 @@ for i in range (0,num):
             f2.insert(i+1,'*')
     for i in range (0,len(f2)-2):
         if f2[i]=='1' and f2[i+1]=='x' or f2[i]=='2' and f2[i+1]=='x' or f2[i]=='3' and f2[i+1]=='x' f2[i]=='4' and f2[i+1]=='x'  or f2[i]=='5' and f2[i+1]=='x' or f2[i]==6 and f2[i+1]=='x'or f2[i]=='7' and f2[i+1]=='x' or f2[i]=='8' and f2[i+1]=='x' or f2[i]=='9' and f2[i+1]=='x' or f2[i]=='0' and f2[i+1]=='l' and f22[i+2]=='n':
-        f2.insert(i+1,'*')
+            f2.insert(i+1,'*')
     equation3=""
     for i in range (0,len(f2)):
         equation=equation+f2[i]
@@ -67,9 +67,9 @@ for i in range (0,num):
         y=i
         f=f+(eval(equation2))*step
     g=0
-    for i in range (0,500):
-        i=(ymin+step/2)+step*i
-        y=i
+    for j in range (0,500):
+        j=(ymin+step/2)+step*j
+        y=j
         g=g+(eval(equation))*step
         totalg=g*(ymax-ymin)/2+totalg
         totalf=f+totalf
