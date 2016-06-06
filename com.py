@@ -41,7 +41,7 @@ for i in range (0,num):
         totale=e+totale
     ymin=float(input("y minimum of piecewise component"))
     ymax=float(input("y maximum of piecewise component"))
-    f2=list(str(input("piecewise function component in terms of y ")))
+    f2=list(input("piecewise function component in terms of y "))
     for i in range (0,len(f2)-1):
         if f2[i]=='l' and f2[i+1]=='n':
             f2[i+1]='g'
@@ -51,10 +51,10 @@ for i in range (0,num):
             f2[i]='*'
             f2.insert(i+1,'*')
     for i in range (0,len(f2)-1):
-        if f2[i]=='1'and f2[i+1]=='x' or f2[i]=='2'and f2[i+1]=='x' or f2[i]=='3'and f2[i+1]=='x' f2[i]=='4'and f2[i+1]=='x' or f2[i]=='5'and f2[i+1]=='x' or f2[i]==6and f2[i+1]=='x' or f2[i]=='7'and f2[i+1]=='x' or f2[i]=='8'and f2[i+1]=='x' or f2[i]=='9'and f2[i+1]=='x' or f2[i]=='0' and f2[i+1]=='x':
+        if f2[i]=='1'and f2[i+1]=='y' or f2[i]=='2'and f2[i+1]=='y' or f2[i]=='3'and f2[i+1]=='y' f2[i]=='4'and f2[i+1]=='y' or f2[i]=='5'and f2[i+1]=='y' or f2[i]==6and f2[i+1]=='y' or f2[i]=='7'and f2[i+1]=='y' or f2[i]=='8'and f2[i+1]=='y' or f2[i]=='9'and f2[i+1]=='y' or f2[i]=='0' and f2[i+1]=='y':
             f2.insert(i+1,'*')
     for i in range (0,len(f2)-2):
-        if f2[i]=='1' and f2[i+1]=='x' or f2[i]=='2' and f2[i+1]=='x' or f2[i]=='3' and f2[i+1]=='x' f2[i]=='4' and f2[i+1]=='x'  or f2[i]=='5' and f2[i+1]=='x' or f2[i]==6 and f2[i+1]=='x'or f2[i]=='7' and f2[i+1]=='x' or f2[i]=='8' and f2[i+1]=='x' or f2[i]=='9' and f2[i+1]=='x' or f2[i]=='0' and f2[i+1]=='l' and f22[i+2]=='n':
+        if f2[i]=='1' and f2[i+1]=='y' or f2[i]=='2' and f2[i+1]=='y' or f2[i]=='3' and f2[i+1]=='y' f2[i]=='4' and f2[i+1]=='y'  or f2[i]=='5' and f2[i+1]=='y' or f2[i]==6 and f2[i+1]=='y'or f2[i]=='7' and f2[i+1]=='y' or f2[i]=='8' and f2[i+1]=='y' or f2[i]=='9' and f2[i+1]=='y' or f2[i]=='0' and f2[i+1]=='l' and f2[i+2]=='n':
             f2.insert(i+1,'*')
     equation3=""
     for i in range (0,len(f2)):
