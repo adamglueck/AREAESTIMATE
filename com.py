@@ -59,7 +59,7 @@ for i in range (0,num):
     equation3=""
     for i in range (0,len(f2)):
         equation=equation+f2[i]
-    equation4="x*("+equation+")"
+    equation4="y*("+equation+")"
     f=0
     step=(ymax-ymin)/500
     for i in range (0,500):
