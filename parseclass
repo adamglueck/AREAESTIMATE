@@ -1,0 +1,28 @@
+i=str(input("function"))
+class parse():
+    def __init__(self,j):
+        self.j=j
+        function=""
+        f=list(self.j)
+        for i in range (0,len(f)-1):
+            if f[i]=='l' and f[i+1]=='n':
+                f[i+1]='g'
+                f.insert(i+1,'o')
+        for i in range (0,len(f)):
+            if f[i]=='^':
+                f[i]='*'
+                f.insert(i+1,'*')
+        for i in range (0,len(f)-1):
+            for k in ['1','2','3','4','5','6','7','8','9','0']:
+                if f[i]==k and f[i+1]=='x':
+                    f.insert(i+1,'*')  
+        for i in range (0,len(f)-3):
+            for k in ['1','2','3','4','5','6','7','8','9','0']:
+                    if f[i]==k and f[i+1]=='l' and f[i+2]=='o' and f[i+3]=='g':
+                        f.insert(i+1,'*')
+        equation=""
+        for i in range (0,len(f)):
+            equation=equation+f[i]
+        self.equation=equation
+c=parse(i)
+print(c.equation)
